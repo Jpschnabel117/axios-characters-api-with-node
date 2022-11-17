@@ -1,0 +1,27 @@
+<h1>Create Your Character</h1>
+  <form action="/characters/create" method="POST">
+    <div>
+      <label>
+        name
+        <input type="text" name="name" placeholder="" />
+      </label>
+    </div>
+    <div>
+      <label>
+        occupation
+        <input type="text" name="occupation" placeholder="" />
+      </label>
+    </div>
+    <div>
+      <label>
+        weapon
+            <input type="text" name="weapon" placeholder="" />
+      </label>
+      </div>
+    <div>
+         <input type="radio" name="debt" value="true"><label> true</label><br>
+ <input type="radio" name="debt" value="false"><label> false</label><br>
+    </div>
+    <br />
+    <button class="submitbuttons" type="submit">Create Character</button>
+  </form>
