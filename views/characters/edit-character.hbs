@@ -1,0 +1,35 @@
+<h1>Edit character data</h1>
+<form action="/characters/{{character.id}}/update" method="POST">
+    <div>
+      <label>
+        name
+        <input type="text" name="name" value="{{ character.name }}" placeholder="" />
+      </label>
+    </div>
+    <div>
+      <label>
+        occupation
+        <input type="text" name="occupation" value="{{ character.occupation }}" placeholder="" />
+      </label>
+    </div>
+    <div>
+      <label>
+        weapon
+            <input type="text" name="weapon" value="{{ character.weapon }}" placeholder="" />
+      </label>
+      </div>
+    <div>
+   
+
+        {{#if character.debt}}
+            <input type="radio" name="debt" value="true" checked><label> true</label><br>
+            <input type="radio" name="debt" value="false"><label> false</label><br>
+        {{else}}
+            <input type="radio" name="debt" value="true" ><label> true</label><br>
+            <input type="radio" name="debt" value="false" checked><label> false</label><br>           
+        {{/if}}
+         
+    </div>
+    <br />
+    <button class="submitbuttons" type="submit">Submit Changes</button>
+  </form>
